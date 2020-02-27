@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Nivaes.ConfigurationFile.UnitTest.Droid")]
+[assembly: AssemblyTitle("Nivaes.App.iOS.UnitTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Nivaes.ConfigurationFile.UnitTest.Droid")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyProduct("Nivaes.App.iOS.UnitTest")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("650c020b-3510-4ffa-9310-ef4e14621254")]
+[assembly: Guid("951cb9f3-4be7-44b1-a566-402f38f6bfd8")]
 
 // Version information for an assembly consists of the following four values:
 //

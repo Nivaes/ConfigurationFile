@@ -1,16 +1,21 @@
 ﻿namespace Nivaes.ConfigurationFile
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
-    using System.Text;
     using System.Threading.Tasks;
 
     public static class ConfigurationStreamProvider
     {
-        public static Task<Stream> GetFileStream(string fileName)
+        public static async Task<Stream> GetFileStream(string fileName)
         {
-            throw new NotImplementedException();
+            var filePath = $"ms-appx:///Assets/{fileName}";
+
+            var file = await StorageFile.GetFileFromApplicationUriAsync(new Uri(filePath));
+
+            var inputStream = await file.OpenReadAsync();
+            var readingStream = inputStream.AsStreamForRead();
+
+            return _readingStream;
         }
     }
 }

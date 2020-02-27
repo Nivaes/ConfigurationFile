@@ -11,7 +11,7 @@ using Nivaes.ConfigurationFile;
 using Xunit.Sdk;
 using Xunit.Runners.UI;
 
-namespace Nivaes.App.Droid.UnitTest
+namespace Nivaes.ConfigurationFile.UnitTest.Droid
 {
     [Activity(Label = "UnitTest App", MainLauncher = true, Theme = "@android:style/Theme.Material.Light")]
     public class MainActivity : RunnerActivity
