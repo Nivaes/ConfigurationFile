@@ -3,6 +3,7 @@
     using System;
     using System.IO;
     using System.Threading.Tasks;
+    using Windows.Storage;
 
     public static class ConfigurationStreamProvider
     {
@@ -15,7 +16,7 @@
             var inputStream = await file.OpenReadAsync();
             var readingStream = inputStream.AsStreamForRead();
 
-            return _readingStream;
+            return readingStream;
         }
     }
 }

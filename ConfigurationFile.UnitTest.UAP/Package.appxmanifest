@@ -5,11 +5,11 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity Name="d249e2a2-5413-4509-8e99-23cf9e439720"
+  <Identity Name="78406E88-E9AB-4BC1-99FD-96B9C7E4D1E9"
             Publisher="CN=agimenez"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="d249e2a2-5413-4509-8e99-23cf9e439720" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="78406E88-E9AB-4BC1-99FD-96B9C7E4D1E9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Nivaes.ConfigurationFile.UnitTest.UAP</DisplayName>
@@ -27,15 +27,17 @@
   <Applications>
     <Application Id="vstest.executionengine.universal.App"
         Executable="$targetnametoken$.exe"
-        EntryPoint="Nivaes.App.UAP.UnitTest.App">
+        EntryPoint="Nivaes.ConfigurationFile.UnitTest.UAP.App">
       <uap:VisualElements
-        DisplayName="Nivaes.App.UAP.UnitTest"
+        DisplayName="Nivaes.ConfigurationFile.UnitTest.UAP"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Nivaes.App.UAP.UnitTest"
+        Description="Nivaes.ConfigurationFile.UnitTest.UAP"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

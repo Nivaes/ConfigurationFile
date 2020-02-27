@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationFile.UnitTest.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationFile", "ConfigurationFile\ConfigurationFile.csproj", "{2D011EEE-D5AF-4629-AAC6-EDCAD9C517D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationFile.UnitTest", "ConfigurationFile.UnitTest\ConfigurationFile.UnitTest.csproj", "{2BB0248C-5EAD-44E9-8DAF-0B653A397AD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationFile.UnitTest", "ConfigurationFile.UnitTest\ConfigurationFile.UnitTest.csproj", "{2BB0248C-5EAD-44E9-8DAF-0B653A397AD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationFile.UnitTest.UAP", "ConfigurationFile.UnitTest.UAP\ConfigurationFile.UnitTest.UAP.csproj", "{AF6938C3-63B2-46ED-B93B-8222ED6B6710}"
 EndProject
@@ -151,7 +151,8 @@ Global
 		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Debug|x64.ActiveCfg = Debug|iPhone
-		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Debug|x86.ActiveCfg = Debug|iPhone
+		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Debug|x86.ActiveCfg = Debug|iPhoneSimulator
+		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Debug|x86.Build.0 = Debug|iPhoneSimulator
 		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Release|ARM.ActiveCfg = Release|iPhone
 		{951CB9F3-4BE7-44B1-A566-402F38F6BFD8}.Release|iPhone.ActiveCfg = Release|iPhone
