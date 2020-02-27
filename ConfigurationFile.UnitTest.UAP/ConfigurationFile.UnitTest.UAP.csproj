@@ -125,6 +125,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="FluentAssertions">
       <Version>5.10.2</Version>
     </PackageReference>
