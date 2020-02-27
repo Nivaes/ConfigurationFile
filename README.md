@@ -1,2 +1,2 @@
-# DataTestGenerator
-Random data generation for testing.
+# ConfigurationFile
+Read a configuration file.
