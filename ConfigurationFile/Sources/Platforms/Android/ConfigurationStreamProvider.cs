@@ -15,7 +15,7 @@
             mContextLazy = new Lazy<Context>(contextFactory);
         }
 
-        public static ValueTask<Stream> GetFileStream(string fileName)
+        public static Task<Stream> GetFileStream(string fileName)
         {
             if (mContextLazy == null) throw new Exception("ConfigurationStreamProvider not initialize. call o Initialize.");
 
@@ -23,7 +23,7 @@
 
             var stream = assets.Open(fileName);
 
-            return new ValueTask<Stream>(stream);
+            return Task.FromResult(stream);
         }
     }
 }

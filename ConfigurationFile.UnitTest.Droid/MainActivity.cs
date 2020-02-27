@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Nivaes.ConfigurationFile;
 
 using Xunit.Sdk;
 using Xunit.Runners.UI;
@@ -26,6 +27,8 @@ namespace Nivaes.App.Droid.UnitTest
 
             //AddTestAssembly(typeof(PortableTests).Assembly);
             // or in any assembly that you load (since JIT is available)
+
+            ConfigurationStreamProvider.GetFileStream("appsettings.json");
 
 #if false
             // you can use the default or set your own custom writer (e.g. save to web site and tweet it ;-)

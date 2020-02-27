@@ -1,7 +1,8 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;netstandard2.0;netstandard2.1;netcoreapp3.0;netcoreapp3.1;monoandroid90;monoandroid10.0;xamarin.ios10;xamarin.mac20;</TargetFrameworks>
+    <!--<TargetFrameworks>netstandard1.3;netstandard2.0;netstandard2.1;monoandroid90;monoandroid10.0;xamarin.ios10;xamarin.mac20;</TargetFrameworks>-->
+    <TargetFrameworks>netstandard1.3;netstandard2.0;netstandard2.1;monoandroid90;monoandroid10.0;</TargetFrameworks>
     <PackageId>Nivaes.ConfigurationFile</PackageId>
     <Title>Nivaes Configuration File</Title>
     <AssemblyName>Nivaes.ConfigurationFile</AssemblyName>
@@ -27,6 +28,14 @@
   <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
     <Compile Include="Sources\Platforms\Netstandard\**\*.cs" />
   </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('uap')) ">
+    <Compile Include="Sources\Platforms\Uap\**\*.cs" />
+  </ItemGroup>
+
+  <!--<ItemGroup Condition=" $(TargetFramework.StartsWith('xamarin.ios')) ">
+    <Compile Include="Sources\Platforms\Ios\**\*.cs" />
+  </ItemGroup>-->
   
   <ItemGroup Condition=" $(TargetFramework.StartsWith('monoandroid')) ">
     <Reference Include="Mono.Android" />
@@ -38,5 +47,5 @@
 
     <Compile Include="Sources\Platforms\Android\**\*.cs" />
   </ItemGroup>
-  
+    
 </Project>
