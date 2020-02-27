@@ -1,0 +1,42 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0;netstandard2.0;netstandard2.1;netcoreapp3.0;netcoreapp3.1;monoandroid90;monoandroid10.0;xamarin.ios10;xamarin.mac20;</TargetFrameworks>
+    <PackageId>Nivaes.ConfigurationFile</PackageId>
+    <Title>Nivaes Configuration File</Title>
+    <AssemblyName>Nivaes.ConfigurationFile</AssemblyName>
+    <RootNamespace>Nivaes.ConfigurationFile</RootNamespace>
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <Product>Data test generator</Product>
+    <Description>Extension configuration.</Description>
+    <PackageTags>Nivaes;Configuration;File;ConfigurationFile;test;generator;testgenerator;xamarin;android;ios</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+    
+  <ItemGroup>
+    <Compile Remove="Sources\Platforms\**\*.cs" />
+    <None Include="Sources\Platforms\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+    <Compile Include="Sources\Platforms\Netstandard\**\*.cs" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('monoandroid')) ">
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+
+    <Compile Include="Sources\Platforms\Android\**\*.cs" />
+  </ItemGroup>
+  
+</Project>
