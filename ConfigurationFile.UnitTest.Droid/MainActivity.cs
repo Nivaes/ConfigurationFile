@@ -19,6 +19,8 @@ namespace Nivaes.ConfigurationFile.UnitTest.Droid
 
         protected override void OnCreate(Bundle bundle)
         {
+            ConfigurationStreamProvider.Initialize(() => this);
+
             // tests can be inside the main assembly
             AddTestAssembly(Assembly.GetExecutingAssembly());
 
@@ -28,7 +30,7 @@ namespace Nivaes.ConfigurationFile.UnitTest.Droid
             //AddTestAssembly(typeof(PortableTests).Assembly);
             // or in any assembly that you load (since JIT is available)
 
-            ConfigurationStreamProvider.GetFileStream("appsettings.json");
+            
 
 #if false
             // you can use the default or set your own custom writer (e.g. save to web site and tweet it ;-)

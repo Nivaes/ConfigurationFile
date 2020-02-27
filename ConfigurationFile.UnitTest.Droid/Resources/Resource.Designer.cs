@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Nivaes.ConfigurationFile.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Nivaes.ConfigurationFile.UnitTest.Droid.Resource", IsApplication=true)]
 
-namespace Nivaes.ConfigurationFile.Droid
+namespace Nivaes.ConfigurationFile.UnitTest.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Nivaes.ConfigurationFile.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Nivaes.ConfigurationFile.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Nivaes.ConfigurationFile.UnitTest.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
