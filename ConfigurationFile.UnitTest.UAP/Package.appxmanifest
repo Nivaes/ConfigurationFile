@@ -5,8 +5,8 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity Name="78406E88-E9AB-4BC1-99FD-96B9C7E4D1E9"
-            Publisher="CN=agimenez"
+  <Identity Name="D49F8504-E319-4CDA-AFEF-E05E1260916F"
+            Publisher="CN=andre"
             Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="78406E88-E9AB-4BC1-99FD-96B9C7E4D1E9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
@@ -36,8 +36,6 @@
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
-        <uap:InitialRotationPreference>
-          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
