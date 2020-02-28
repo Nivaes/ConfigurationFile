@@ -11,7 +11,7 @@
         [Fact]
         public async Task LoadConfigurationFile()
         {
-            var streamFile = await ConfigurationStreamProvider.GetFileStream("appsettings.json");
+            using var streamFile = await ConfigurationStreamProvider.GetFileStream("appsettings.json");
             streamFile.Should().NotBeNull();
 
             var builder = new ConfigurationBuilder().AddJsonStream(streamFile);
